@@ -54,8 +54,8 @@ public class metodoscrud {
             Collection collection = obtenerColeccion();
 
             if (collection != null) {
-                // Intenta obtener el usuario por su nombre
-                XMLResource usuarioResource = (XMLResource) collection.getResource(nombreUsuario );
+                // Intenta obtener el usuario 
+                XMLResource usuarioResource = (XMLResource) collection.getResource(nombreUsuario + ".xml");
 
                 // Verifica si el recurso existe y la contraseña coincide
                 return usuarioResource != null && usuarioResource.getContent().toString().equals(contraseña);

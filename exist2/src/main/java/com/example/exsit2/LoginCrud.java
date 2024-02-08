@@ -17,7 +17,7 @@ metodoscrud metodos = new metodoscrud();
             System.out.print("Seleccione una opción: ");
             Scanner scanner = new Scanner(System.in);
             int opcion = scanner.nextInt();
-            scanner.nextLine();  // Consumir el salto de línea
+            scanner.nextLine();  
 
             switch (opcion) {
                 case 1:
@@ -29,7 +29,7 @@ metodoscrud metodos = new metodoscrud();
                     break;
     
                 case 2:
-                    // Lógica para iniciar sesión
+                    
                     System.out.print("Nombre de usuario: ");
                     String nombreUsuario = scanner.nextLine();
                     System.out.print("Contraseña: ");
@@ -51,7 +51,7 @@ metodoscrud metodos = new metodoscrud();
                     break;
 
                 case 4:
-                    // Lógica para eliminar usuario
+                    //  eliminar usuario
                     System.out.print("Nombre de usuario a eliminar: ");
                     String usuarioEliminar = scanner.nextLine();
                     eliminarUsuario(usuarioEliminar);
